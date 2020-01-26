@@ -602,6 +602,7 @@ static void OnSize(HWND hwnd, UINT state, int cx, int cy)
 
     if (IsWindowVisible(s_hToolBar))
     {
+        // get cyToolBar
         INT nCount = (INT)SendMessage(s_hToolBar, TB_BUTTONCOUNT, 0, 0);
         SendMessage(s_hToolBar, TB_GETITEMRECT, nCount - 1, (LPARAM)&rc);
         DWORD dwPadding = SendMessage(s_hToolBar, TB_GETPADDING, 0, 0);
