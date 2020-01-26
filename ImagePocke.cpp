@@ -554,7 +554,7 @@ static void OnClose(HWND hwnd)
         switch (nID)
         {
         case IDYES:
-            DoSave(hwnd, NULL);
+            DoSave(hwnd, s_szFileName);
             break;
         case IDNO:
             break;
